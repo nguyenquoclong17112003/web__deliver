@@ -1,0 +1,19 @@
+@mixin btn-all(
+  $background-color: linear-gradient(45deg, #ff4c4c, #ff8a4c),
+  $color: white
+) {
+  min-width: 270px;
+  height: 52px;
+  border-radius: 12px;
+  background: $background-color;
+  color: $color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1.6rem;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
