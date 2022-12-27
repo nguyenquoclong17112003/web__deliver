@@ -4,7 +4,15 @@
 @import "header";
 
 .footer {
-  min-height: 300px;
+  background-color: #df2320;
+  padding: 15px 0;
+}
+
+.footer__sesign {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: $font-archivo;
 }
 
 .content {
@@ -46,7 +54,7 @@
     content: "";
     display: block;
     position: absolute;
-    width: 100%;
+    width: 101%;
     height: 101%;
     border-radius: 11px;
     top: -0.5px;
@@ -149,6 +157,7 @@
 .content__service {
   background-color: #f9f9f9;
   margin-top: 175px;
+  padding-bottom: 100px;
 }
 
 .content__service-title {
@@ -228,12 +237,11 @@
     background: $background-primary;
   }
   &__point {
-    margin-top: 145px;
   }
   &__point-title {
     font-size: 3.6rem;
     font-weight: 700;
-    padding-top: 75px;
+    padding-top: 110px;
     color: $white;
     font-family: $font-archivo;
     text-align: center;
@@ -340,4 +348,309 @@
     font-family: $font-inter;
     font-size: 1.6rem;
   }
+}
+
+// ! ascend price
+
+.content {
+  &__price-ascend {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, 283px);
+    gap: 70px;
+    justify-content: center;
+    align-items: end;
+  }
+  &__price-ascend-item {
+    border: 2px solid #fce2ce;
+    padding: 32px 26px;
+    border-radius: 18px;
+  }
+  &__ascend-item-heading {
+    font-size: 3.4rem;
+    font-weight: 900;
+    font-family: $font-inter;
+    color: $heading-color;
+  }
+  &__ascend-price-do {
+    display: block;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: $font-inter;
+    background: $background-primary;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 4rem;
+  }
+  &__ascend-time {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: $desc-color;
+    margin-left: 3px;
+    margin-top: 11px;
+  }
+  &__ascend-delivery-list {
+    list-style: none;
+    margin-top: 25px;
+  }
+  &__ascend-delivery-item {
+    color: #161e2e;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  &__ascend-delivery-item-desc {
+    margin: 5px 0 15px 33px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #4b5563;
+  }
+}
+.icon {
+  &-tick {
+    color: #252f3f;
+    margin-right: 18px;
+    font-size: 1.5rem;
+  }
+}
+
+.content__ascend-line {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.content__ascend-delivery-btn {
+  @include btn-all;
+  min-width: 231px;
+  height: 49px;
+}
+
+// ! Pictures
+.content {
+  &__pictures-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 300px;
+    gap: 25px;
+  }
+  &-ps-banner-img {
+    position: relative;
+  }
+
+  &__pictures-delivery-img {
+    border-radius: 16px;
+    width: 100%;
+    height: 248px;
+    object-fit: cover;
+  }
+}
+
+.from {
+  &__pictures-text {
+    position: absolute;
+    bottom: 0%;
+    background: linear-gradient(
+      360deg,
+      rgba(254, 150, 94, 0.8) 0%,
+      rgba(193, 23, 23, 0.1) 100%
+    );
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+  }
+  &__pictures-text-heading {
+    font-size: 2.4rem;
+    font-weight: 900;
+    font-family: $font-inter;
+    color: #fff8f1;
+    margin-top: 185px;
+    margin-left: 20px;
+  }
+  &__pictures-text-desc {
+    font-size: 1.4rem;
+    margin-left: 20px;
+    font-weight: 900;
+    color: #fcd9bd;
+    margin-top: 10px;
+  }
+}
+
+.Frequently {
+  padding-top: 150px;
+}
+
+.content {
+  &__using {
+    margin-top: 50px;
+  }
+  &__using-list {
+    border-radius: 8px;
+    width: calc(100% - 220px);
+    margin: auto;
+    margin-bottom: 25px;
+    border: 2px solid #dde0e5;
+    list-style: none;
+  }
+  &__using-list:hover {
+    border: 2px solid #feeee0;
+  }
+  &__using-list-active {
+    border: 2px solid #feeee0;
+  }
+  &__using-item {
+    padding: 34px 25px 32px 24px;
+  }
+  &__using-top {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__using-item-link-active {
+    text-decoration: none;
+    color: $heading-color;
+    font-weight: 700;
+    font-size: 1.8rem;
+    font-family: $font-inter;
+  }
+
+  &__using-item-link {
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: 400;
+    font-size: 1.8rem;
+    font-family: $font-inter;
+  }
+  &__using-item-desc {
+    color: #4b5563;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: $font-archivo;
+    margin-top: 17px;
+    line-height: 2.2rem;
+  }
+}
+.minus {
+  &-icon {
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+}
+
+.content__heading-question {
+  font-weight: 400;
+  font-size: 2.3rem;
+  font-family: $font-inter;
+  text-align: center;
+  color: #161e2e;
+  margin-top: 50px;
+}
+
+.content__desc-question {
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 2.3rem;
+  font-family: $font-inter;
+}
+
+.content__desc-contact {
+  font-weight: 700;
+}
+
+.content__contact {
+  background-color: $heading-color;
+  margin-top: 150px;
+  padding-bottom: 100px;
+}
+
+.content__point-title-contact {
+  padding-top: 78px;
+}
+
+.content {
+  &__contact-inter {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    margin-top: 34px;
+  }
+  &__contact-inter-item {
+    padding: 8px 30px;
+    text-align: center;
+  }
+  &__contact-inter-desc {
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 700;
+    margin-top: 9px;
+    font-family: $font-inter;
+  }
+}
+.icon {
+  &-contact-intern {
+    font-size: 2.5rem;
+    color: $white;
+  }
+}
+
+.content__contact-inter-item-active {
+  background-color: #df2320;
+  border-radius: 5px;
+}
+
+.content {
+  &__register {
+    width: 471px;
+    border-radius: 8px;
+    margin: 42px auto 0;
+    padding: 32px 41px 20px;
+    background-color: $white;
+  }
+  &__register-group {
+    position: relative;
+    margin-bottom: 26px;
+  }
+  &__register-group-label {
+    position: absolute;
+    display: block;
+    left: 3%;
+    top: 57%;
+    user-select: none;
+    color: #a2a7af;
+    pointer-events: none;
+    font-size: 1.4rem;
+  }
+  &__register-input {
+    border: 2px solid #ff6562;
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 0 15px;
+    height: 52px;
+    border-radius: 11px;
+    outline: none;
+  }
+  &__register-input:not(:placeholder-shown) + .content__register-group-label,
+  &__register-input:focus + .content__register-group-label {
+    transform: translateY(-24.7px);
+    transition: all 0.5s;
+    background-color: white;
+    padding: 0 5px;
+  }
+}
+
+.content__resgister-label {
+  color: #fb9f9d;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: 5px;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.content__register-input-message {
+  height: 108px;
+}
+
+.content__register-group-label-message {
+  top: 33%;
 }
